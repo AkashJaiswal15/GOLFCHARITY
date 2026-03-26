@@ -1,0 +1,15 @@
+.git
+.gitignore
+node_modules
+npm-debug.log
+.env
+.DS_Store
+server/debug.js
+server/debug2.js
+server/fixAll.js
+server/fixUsers.js
+server/resetAdmin.js
+server/resetDraw.js
+server/seed.js
+server/testDraw.js
+server/testLogin.js
