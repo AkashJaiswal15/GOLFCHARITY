@@ -14,15 +14,5 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.js" },
     { "src": "/(.*)", "dest": "/client/$1" }
-  ],
-  "env": {
-    "MONGO_URI": "@mongo_uri",
-    "JWT_SECRET": "@jwt_secret",
-    "STRIPE_SECRET_KEY": "@stripe_secret_key",
-    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret",
-    "STRIPE_MONTHLY_PRICE_ID": "@stripe_monthly_price_id",
-    "STRIPE_YEARLY_PRICE_ID": "@stripe_yearly_price_id",
-    "CLIENT_URL": "@client_url",
-    "PORT": "5000"
-  }
+  ]
 }
