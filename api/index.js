@@ -43,4 +43,14 @@ app.use(async (req, res, next) => {
   next();
 });
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
+});
+
 module.exports = app;
